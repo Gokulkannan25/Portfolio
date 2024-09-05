@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Protfolio</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Phudu:wght@600&family=Poppins:ital,wght@1,100&family=Roboto+Condensed:ital@1&display=swap" rel="stylesheet">
+</head>
+<style>
+    .removeclass{
+        display: none;
+    }
+   
+    /* Style for the project description */
+    .project-description {
+        font-size: 26px;
+        line-height: 1.6;
+    
+        margin-bottom: 20px;
+    }
+
+    /* Style for the "Learn more" link */
+    .learn-more-link {
+        display: inline-block;
+        background-color: #007bff;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .learn-more-link:hover {
+        background-color: #0056b3;
+    }
+    /* Style for the "More Projects" link */
+.more-projects {
+    margin-top: 20px;
+}
+
+.more-projects-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.more-projects-link:hover {
+    background-color: #0056b3;
+}
+
+
+</style>
+
+
+  
+<body >
+    <div id="header" class="parallax-section">
+        <div class="container">
+            <nav>
+                <div></div>
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#header">Home</a> </li>
+                        <li>  <a href="#about">About</a> </li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact me</a>
+                            
+                            
+                        </li>
+                        <i class="fa-solid fa-xmark" onclick="closemen()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmen()"></i>
+            </nav>
+            <div class="header-text" id="back">
+                <h1>Hi, I'm   <span class="typing" ></span> 
+                    
+            </div>
+        </div>
+        
+    </div>
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!--this is where to resume  -->
+                    <img src="images/DSC_0092 copy----.JPG" alt="profileimage" srcset="" width="400px" style="padding: 20px 40px;">
+                   </div>
+                <div class="about-col-2">
+                    
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+    
+                        To establish my educational skills towards competitive and
+                        challenging task to succeed in an environment of growth and
+                        excellance. In doing so, I would be a part of the success of growing
+                        organization and enhance my technical knowledge for myself.</p>
+
+                       
+                       <div class="tab-titles">
+                           <p class="tab-links active-link" onclick="opentab('skills')">Skill</p>
+                           <p class="tab-links" onclick="opentab('certificates')">Certifications</p>
+                           <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        
+                        <div class="tab-content active-tab" id="skills">
+                          
+                            <ul>
+                                <li><span>Problem Solving</span></li>
+                                <li><span>Website Designing</span></li>
+                                <li><span>Data Structure</span></li>
+                                <li><span>Critical Thinking</span></li>
+                                <li><span>Proficient Technologies</span></li>
+                                <div class="scroller" data-direction="right" data-speed="slow">
+                                    <div class="scroller__inner">
+                                        <img src="images/skills/c logo-Photoroom.png-Photoroom.png" alt="C Icon" style="width: 50px; height: 50px; margin-right: 20px;">
+                                        <!-- <img src="images/skills/7423888_react_react native_icon.png" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;"> -->
+                                        <!-- <img src="images/skills/1012822_code_development_logo_mongodb_programming_icon.png" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;"> -->
+                                        <img src="images/skills/317755_badge_html_html5_achievement_award_icon.png" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;">
+                                        <img src="images/skills/4202020_css3_html_logo_social_social media_icon.png" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;">
+                                        <img src="images/skills/4373217_java_logo_logos_icon.png" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;">
+                                        <img src="images/skills/4375017_js_logo_node_icon.png" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;">
+                                        <!-- <img src="images/skills/652581_code_command_develop_javascript_language_icon.png" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;"> -->
+                                        <!-- <img src="images/skills/" alt="Python Icon" style="width: 50px; height: 50px; margin-right: 20px;"> -->
+                                        
+                                    </div>
+                                    
+                                </div>
+                            </ul>
+</div>
+
+                        <div class="tab-content " id="certificates">
+                           
+                            <ul>
+                                <li>NPTEL- Data Structure and Algorithms using Java</a></li>
+                                <li>SkillRack- C and Java</li>
+                                <li>HackerRank- Problem Solving(Basic)</a></li>
+                                <li>Asian Book of Records- Basic Life Support and Recovery Position</li>
+                            </ul>
+                        </div>
+                        <div class="tab-content " id="education">
+                         
+                            <ul>
+                                <li>
+                                    <span>UG(BE-CSE)</span> <br>
+                                    Karpagam college of Engineering ,Coimbatore  &nbsp;
+                                    2021-Present <br> 
+                                    Current-CGPA- <b style="color: rgb(58, 154, 67);">7.52</b>
+
+                                </li>
+                                <li>
+                                    <span>SSLC</span> <br>
+                                    Tagore Matric Higher Secondary School, Salem  &nbsp;
+                                    2019 <br>
+                                    Percentage: <i style="color: rgb(58, 154, 67)"><b>88.4%</b></i>
+
+                                </li>
+                                <li>
+                                    <span>HSC</span> <br>
+                                    Tagore Matric Higher Secondary School, Salem &nbsp;
+                                    2021 <br>
+                                    Percentage: <i style="color: rgb(58, 154, 67)"><b>86.87%</b></i>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Projects -->
+<div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My projects</h1>
+        <div class="projects-list">
+            <div>
+                <!-- <p><i style="margin-bottom: 12px;" class="fa-solid fa-film"></i></p> -->
+                <h1>Portfolio</h1> <br>
+                <p class="project-description" style="font-size: 18px;">
+                    I have created a clean and responsive web portfolio using HTML and CSS to showcase my projects and skills. The design emphasizes simplicity and user experience, with intuitive navigation and clear presentation of content. The portfolio highlights my expertise in various technologies, including Java, JDBC, database management, and web development.
+<br>
+( Tools used - Java, SHA-256 Cryptographic Hash Function, Array List)
+                </p>
+                <!-- <a href="https://poetic-dieffenbachia-147726.netlify.app/" target="_blank" class="btn">See the Live Demo</a> -->
+            </div>
+            <div>
+                <!-- <i class="fa-brands fa-pagelines" style="margin-bottom: 12px;"></i> -->
+                <h1>Water Moisture Sensing System</h1> <br>
+                <p class="project-description" style="font-size: 17px;">
+                    The main contribution of this development is to provide and develop an innovative
+                    solution for monitoring and managing soil moisture levels in agricultural fields. This
+                    technology addresses the critical need for an efficient water usage in agriculture,
+                    ensuring optimal crop growth and resource conservation.
+                    <br>( Tools used - Arduino IDE , Embedded C language )</p>
+                <!-- <a href="images/Alpha climber.pdf" class="btn" target="learnmore.html">Learn more</a> -->
+            </div>
+            <div>
+                <!-- <i style="margin-bottom: 12px;" class="fa-solid fa-robot"></i> -->
+                <h1 style="margin-bottom: 2px;">Flight Reservation Using JDBC</h1> <br>
+                <p class="project-description" style="font-size: 15px;">
+                    Developed a flight reservation system using JDBC to facilitate seamless booking and management of flights. The system includes functionalities for user registration, flight search, booking, cancellation, and management of user profiles. It connects to a relational database to ensure efficient data storage and retrieval, implementing SQL queries for various operations. The application ensures transactional integrity and provides a robust and user-friendly interface for both customers and administrators. Through this project, I honed my skills in Java, JDBC, SQL, and database design, along with understanding the complexities of managing a real-world reservation system.
+                    <br>( Tools used - VS Code , Java, MySQL)</p>
+                <!-- <a href="https://studio.openweaver.com/apps/aalaguraj748/ChatBot1/login" class="btn" target="_blank">Learn more</a> -->
+            </div>
+            <!-- Right arrow for more projects -->
+        </div>
+        <div class="more-projects" style="margin-top: 120px;">
+            <a href="https://github.com/AlaguAravindA/" target="_blank" class="btn">
+                <i class="fa-solid fa-chevron-right"></i> More Projects
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Contact -->
+<div id="contact" style="margin-top: 100px;">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact me</h1>
+                <p> <i class="fa-solid fa-at"></i>gokulkannanm25@gmail.com</p>
+                <p><i class="fa-solid fa-phone-volume"></i>+91 9597459357</p>
+                
+                <div class="socialicons">
+                    <a href="https://www.instagram.com/gokulkannan582/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/gokul-kannan-m-7382a426a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Gokulkannan25" target=""><i class="fa-brands fa-github"></i></a>
+
+
+
+                </div>
+                <a href="images/717821P118-GOKULKANNAN M.pdf" class="btn" download>Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input  type="text" name="Name" placeholder="Name*" required />
+                    <input type="email" name="Email" placeholder="Email*" required/>
+                    <textarea name="Meassage" rows="6" placeholder="Type your Message"></textarea>
+                    <button type="submit" value="Submit Form" class="btn btn2">Send message</button>
+                    </form>
+                    <br>
+                    <span id="msg">  </span>
+                   
+
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+<script src="scripts.js"></script>
+
+
+<script>
+    // Typing effect
+    
+    var typed = new Typed(".typing",{
+    strings:["Gokulkannan M","a Student!!","Web Developer"],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+});
+
+let tablinks=document.getElementsByClassName("tab-links");
+let tabcontent=document.getElementsByClassName("tab-content");
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+    for(tabcontents of tabcontent){
+        tabcontents.classList.remove("active-tab");
+
+    }
+
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+
+var sidemen= document.getElementById("sidemenu");
+var bright= document.getElementById("back");
+var bright1= document.getElementById("logo");
+var bright2= document.getElementById("header");
+
+
+function openmen(){
+    sidemen.style.right=0
+   bright.style.filter="brightness(20%)";   
+   bright1.style.filter="brightness(20%)";   
+     
+   
+}
+function closemen(){
+    sidemen.style.right= "-200px"
+    bright.style.filter="brightness(100%)";  
+    bright1.style.filter="brightness(100%)";  
+      
+    
+}
+
+
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrn4xO1f-97VlF85oxQkGd6iobV1Khfp1-Crfnyt6rJk9PI85W7USTNNA9BWSwSXzavw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+           
+            msg.innerHTML="Message has been sent js";
+            console.log("outside function")
+            setTimeout(function(){
+                msg.innerHTML=" ";
+                
+            },5000);
+            form.reset();
+            
+         
+        })
+        .catch(error => {
+            form.reset();
+
+        })
+    })
+  </script>
+<script src="https://kit.fontawesome.com/91628c22f2.js" crossorigin="anonymous"></script>
+</body>
+</html>
